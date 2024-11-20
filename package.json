@@ -24,13 +24,16 @@
   },
   "contributors": [],
   "scripts": {
-    "dev": "",
-    "test": ""
+    "dev": "node --watch --env-file=.env index.js",
+    "test": "node --watch --env-file=.env.local index.js"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "express": "^4.21.1",
     "typescript": "^5.6.3",
     "webpack": "^5.96.1"
+  },
+  "dependencies": {
+    "mongodb": "^6.10.0"
   }
 }
